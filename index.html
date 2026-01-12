@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>MPEP Chapter 700</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #app {
+    display: flex;
+    height: 100vh;
+  }
+
+  /* LEFT PANEL */
+  #left-panel {
+    width: 260px;
+    background: #1f2937;
+    color: white;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .chapter-item {
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    background: #374151;
+  }
+
+  /* RIGHT PANEL */
+  #right-panel {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f9fafb;
+  }
+
+  .topic, .subtopic {
+    margin: 6px 0;
+  }
+
+  .topic-title {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+  .topic-title:hover {
+    background: #e5e7eb;
+  }
+
+  .children {
+    margin-left: 20px;
+    display: none;
+  }
+
+  .reserved {
+    color: #6b7280;
+    cursor: default;
+  }
+</style>
+</head>
+
+<body>
+<div id="app">
+
+  <!-- LEFT -->
+  <aside id="left-panel">
+    <div class="chapter-item">
+      Chapter 700 – Examination of Applications
+    </div>
+  </aside>
+
+  <!-- RIGHT -->
+  <main id="right-panel">
+    <div id="chapter-700-content">
+
+<!-- ===================== 701 ===================== -->
+<div class="topic">
+  <div class="topic-title">701 Statutory Authority for Examination</div>
+</div>
+
+<!-- ===================== 702 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">702 Requisites of the Application</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title">702.01 Obviously Informal Cases</div>
+    </div>
+  </div>
+</div>
+
+<div class="topic reserved">
+  <div class="topic-title">703 [Reserved]</div>
+</div>
+
+<!-- ===================== 704 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">704 Search and Requirements for Information</div>
+  <div class="children">
+
+    <div class="subtopic"><div class="topic-title">704.01 Search</div></div>
+    <div class="subtopic reserved"><div class="topic-title">704.02–704.09 [Reserved]</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">704.10 Requirements for Information</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">704.11 What Information May Be Required</div></div>
+        <div class="subtopic"><div class="topic-title">704.11(a) Examples of Information Reasonably Required</div></div>
+        <div class="subtopic"><div class="topic-title">704.11(b) When May a Requirement for Information Be Made</div></div>
+        <div class="subtopic"><div class="topic-title">704.12 Replies to a Requirement for Information</div></div>
+        <div class="subtopic"><div class="topic-title">704.12(a) Relationship to Duty of Disclosure</div></div>
+        <div class="subtopic"><div class="topic-title">704.12(b) What Constitutes a Complete Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.12(c) Treatment of an Incomplete Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.13 Time Periods for Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.14 Making a Requirement for Information</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(a) Format of the Requirement</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(b) Examiner’s Obligation Following Applicant’s Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(c) Petitions to Requirements Under 37 CFR 1.105</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(d) Relationship to IDS</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== 705 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">705 Patentability Reports</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">705.01 Instructions re Patentability Reports</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(a) Nature of P.R., Its Use and Disposal</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(b) Sequence of Examination</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(c) Counting and Recording P.R.s</div></div>
+    <div class="subtopic reserved"><div class="topic-title">705.01(d) [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(e) Limitation as to Use</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(f) Interviews With Applicants</div></div>
+  </div>
+</div>
+
+<!-- ===================== 706 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">706 Rejection of Claims</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">706.01 Contrasted With Objections</div></div>
+    <div class="subtopic"><div class="topic-title">706.02 Rejection on Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">706.03 Rejections Not Based on Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">706.04 Rejection of Previously Allowed Claims</div></div>
+    <div class="subtopic"><div class="topic-title">706.05 Rejection After Allowance</div></div>
+    <div class="subtopic"><div class="topic-title">706.06 Rejection of Claims Copied From Patent</div></div>
+    <div class="subtopic"><div class="topic-title">706.07 Final Rejection</div></div>
+    <div class="subtopic"><div class="topic-title">706.07(a)–(h) Final Rejection Practice</div></div>
+  </div>
+</div>
+
+<!-- ===================== 707 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">707 Examiner’s Letter or Action</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">707.01 Primary Examiner Indicates Action</div></div>
+    <div class="subtopic"><div class="topic-title">707.02 Applications Up for Third Action</div></div>
+    <div class="subtopic"><div class="topic-title">707.05 Citation of References</div></div>
+    <div class="subtopic"><div class="topic-title">707.06 Citation of Decisions</div></div>
+    <div class="subtopic"><div class="topic-title">707.07 Completeness and Clarity</div></div>
+  </div>
+</div>
+
+<!-- ===================== 708 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">708 Order of Examination</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">708.01 List of Special Cases</div></div>
+    <div class="subtopic">
+      <div class="topic-title toggle">708.02 Petition To Make Special</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">708.02(a) Accelerated Examination</div></div>
+        <div class="subtopic"><div class="topic-title">708.02(b) Prioritized Examination</div></div>
+        <div class="subtopic"><div class="topic-title">708.02(c) Patent Prosecution Highway Program</div></div>
+      </div>
+    </div>
+    <div class="subtopic"><div class="topic-title">708.03 Examiner Tenders Resignation</div></div>
+  </div>
+</div>
+
+<!-- ===================== 709 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">709 Suspension of Action</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title">709.01 Overlapping Applications by Same Applicant or Owned by Same Assignee</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 710 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">710 Period for Reply</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title toggle">710.01 Statutory Period</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">710.01(a) Statutory Period, How Computed</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">710.02 Shortened Statutory Period and Time Limit Actions Computed</div>
+      <div class="children">
+        <div class="subtopic reserved"><div class="topic-title">710.02(a) [Reserved]</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(b) Shortened Statutory Period: Situations in Which Used</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(c) Specified Time Limits: Situations in Which Used</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(d) Difference Between Shortened Statutory Periods for Reply and Specified Time Limits</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(e) Extension of Time</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic reserved"><div class="topic-title">710.03 [Reserved]</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">710.04 Two Periods Running</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">710.04(a) Copying Patent Claims</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">710.05 Period Ending on Saturday, Sunday, or a Federal Holiday</div></div>
+    <div class="subtopic"><div class="topic-title">710.06 Situations When Reply Period Is Reset or Restarted</div></div>
+  </div>
+</div>
+
+<!-- ===================== 711 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">711 Abandonment of Patent Application</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">711.01 Express or Formal Abandonment</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.02 Failure To Take Required Action During Statutory Period</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.02(a) Insufficiency of Reply</div></div>
+        <div class="subtopic"><div class="topic-title">711.02(b) Special Situations Involving Abandonment</div></div>
+        <div class="subtopic"><div class="topic-title">711.02(c) Termination of Proceedings</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.03 Reconsideration of Holding of Abandonment; Revival</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.03(a) Holding Based on Insufficiency of Reply</div></div>
+        <div class="subtopic"><div class="topic-title">711.03(b) Holding Based on Failure To Reply Within Period</div></div>
+        <div class="subtopic"><div class="topic-title">711.03(c) Petitions Relating to Abandonment</div></div>
+        <div class="subtopic"><div class="topic-title">711.03(d) Examiner’s Statement on Petition To Set Aside Examiner’s Holding</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.04 Public Access to Abandoned Applications</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.04(a) Date of Abandonment</div></div>
+        <div class="subtopic"><div class="topic-title">711.04(b) Ordering of Patented and Abandoned Files</div></div>
+        <div class="subtopic"><div class="topic-title">711.04(c) Notifying Applicants of Abandonment</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">711.05 Letter of Abandonment Received After Application Is Allowed</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.06 Abstracts, Abbreviatures, and Defensive Publications</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.06(a) Citation and Use of Abstracts, Abbreviatures, and Defensive Publications as References</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 712 ===================== -->
+<div class="topic reserved">
+  <div class="topic-title">712 [Reserved]</div>
+</div>
+
+<!-- ===================== 713 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">713 Interviews</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">713.01 General Policy, How Conducted</div></div>
+    <div class="subtopic"><div class="topic-title">713.02 Interviews Prior to First Official Action</div></div>
+    <div class="subtopic"><div class="topic-title">713.03 Interview for “Sounding Out” Examiner Not Permitted</div></div>
+    <div class="subtopic"><div class="topic-title">713.04 Substance of Interview Must Be Made of Record</div></div>
+    <div class="subtopic"><div class="topic-title">713.05 Interviews Prohibited or Granted, Special Situations</div></div>
+    <div class="subtopic"><div class="topic-title">713.06 No Inter Partes Questions Discussed Ex Parte</div></div>
+    <div class="subtopic"><div class="topic-title">713.07 Exposure of Other Cases</div></div>
+    <div class="subtopic"><div class="topic-title">713.08 Demonstration, Exhibits, Models</div></div>
+    <div class="subtopic"><div class="topic-title">713.09 Interviews Between Final Rejection and Notice of Appeal</div></div>
+    <div class="subtopic"><div class="topic-title">713.10 Interview Preceding Filing Amendment Under 37 CFR 1.312</div></div>
+  </div>
+</div>
+
+<!-- ===================== 714 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">714 Amendments, Applicant’s Action</div>
+  <div class="children">
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.01 Signatures to Amendments</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">714.01(a) Unsigned or Improperly Signed Amendment</div></div>
+        <div class="subtopic reserved"><div class="topic-title">714.01(b) [Reserved]</div></div>
+        <div class="subtopic"><div class="topic-title">714.01(c) Signed by Attorney or Agent Not of Record</div></div>
+        <div class="subtopic"><div class="topic-title">714.01(d) Amendment Signed by Applicant but Not by Attorney or Agent of Record</div></div>
+        <div class="subtopic"><div class="topic-title">714.01(e) Amendments Before First Office Action</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.02 Must Be Fully Responsive</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.03 Amendments Not Fully Responsive, Action To Be Taken</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">714.03(a) Supplemental Amendment</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.04 Claims Presented in Amendment With No Attempt To Point Out Patentable Novelty</div></div>
+    <div class="subtopic"><div class="topic-title">714.05 Examiner Should Immediately Review</div></div>
+    <div class="subtopic reserved"><div class="topic-title">714.06 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">714.07 Amendments Not in Permanent Ink</div></div>
+    <div class="subtopic reserved"><div class="topic-title">714.08–714.09 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">714.10 Claims Added in Excess of Claims Previously Paid For</div></div>
+    <div class="subtopic"><div class="topic-title">714.11 Amendment Filed During Interference Proceedings</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.12 Amendments and Other Replies After Final Rejection or Action</div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.13 Amendments and Other Replies After Final Rejection or Action, Procedure Followed</div></div>
+    <div class="subtopic"><div class="topic-title">714.14 Amendments After Allowance of All Claims</div></div>
+    <div class="subtopic"><div class="topic-title">714.15 Amendment Received in Technology Center After Mailing of Notice of Allowance</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.16 Amendment After Notice of Allowance, 37 CFR 1.312</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">714.16(a) Amendments Under 37 CFR 1.312, Copied Patent Claims</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(b) Amendments Under 37 CFR 1.312 Filed With a Motion Under 37 CFR 41.208</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(c) Amendments Under 37 CFR 1.312, Additional Claims</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(d) Amendments Under 37 CFR 1.312, Handling</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(e) Amendments Under 37 CFR 1.312, Entry in Part</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.17 Amendment Filed After the Period for Reply Has Expired</div></div>
+    <div class="subtopic"><div class="topic-title">714.18 Entry of Amendments</div></div>
+    <div class="subtopic"><div class="topic-title">714.19 List of Amendments, Entry Denied</div></div>
+    <div class="subtopic"><div class="topic-title">714.20 List of Amendments Entered in Part</div></div>
+    <div class="subtopic"><div class="topic-title">714.21 Amendments Inadvertently Entered, No Legal Effect</div></div>
+    <div class="subtopic reserved"><div class="topic-title">714.22–714.24 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">714.25 Discourtesy of Applicant or Attorney</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 715 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">715 Swearing Behind a Reference — Affidavit or Declaration Under 37 CFR 1.131(a)</div>
+  <div class="children">
+
+    <div class="subtopic"><div class="topic-title">715.01 37 CFR 1.131(a) Affidavits Versus 37 CFR 1.132 Affidavits</div></div>
+
+    <div class="subtopic"><div class="topic-title">715.01(a) Reference Is a Patent or Published Application Naming Different Inventive Entity With at Least One Common Inventor</div></div>
+    <div class="subtopic"><div class="topic-title">715.01(b) Reference and Application Have Common Assignee</div></div>
+    <div class="subtopic"><div class="topic-title">715.01(c) Reference Is Publication of Inventor’s Own Invention</div></div>
+    <div class="subtopic"><div class="topic-title">715.01(d) Activities Applied Against the Claims</div></div>
+
+    <div class="subtopic"><div class="topic-title">715.02 How Much of the Claimed Invention Must Be Shown, Including the General Rule as to Generic Claims</div></div>
+    <div class="subtopic"><div class="topic-title">715.03 Genus-Species, Practice Relative to Cases Where Predictability Is in Question</div></div>
+    <div class="subtopic"><div class="topic-title">715.04 Who May Make Affidavit or Declaration Under 37 CFR 1.131(a); Formal Requirements</div></div>
+    <div class="subtopic"><div class="topic-title">715.05 U.S. Patent or Application Publication Claiming Same Invention</div></div>
+    <div class="subtopic reserved"><div class="topic-title">715.06 [Reserved]</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">715.07 Facts and Documentary Evidence</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">715.07(a) Diligence</div></div>
+        <div class="subtopic"><div class="topic-title">715.07(b) Interference Testimony Sometimes Used</div></div>
+        <div class="subtopic"><div class="topic-title">715.07(c) Acts Must Have Been Carried Out in This Country or NAFTA/WTO Country</div></div>
+        <div class="subtopic"><div class="topic-title">715.07(d) Disposition of Exhibits</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">715.08 Decided by Primary Examiner</div></div>
+    <div class="subtopic"><div class="topic-title">715.09 Timely Presentation</div></div>
+    <div class="subtopic"><div class="topic-title">715.10 Review of Affidavit or Declaration for Public Use, Sale, or Best Mode</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 716 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">716 Affidavits or Declarations Under 37 CFR 1.132 and Other Evidence Traversing Rejections</div>
+  <div class="children">
+
+    <div class="subtopic">
+      <div class="topic-title toggle">716.01 Generally Applicable Criteria</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">716.01(a) Objective Evidence of Nonobviousness</div></div>
+        <div class="subtopic"><div class="topic-title">716.01(b) Nexus Requirement and Evidence of Nonobviousness</div></div>
+        <div class="subtopic"><div class="topic-title">716.01(c) Probative Value of Objective Evidence</div></div>
+        <div class="subtopic"><div class="topic-title">716.01(d) Weighing Objective Evidence</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">716.02 Allegations of Unexpected Results</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">716.02(a) Evidence Must Show Unexpected Results</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(b) Burden on Applicant</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(c) Weighing Evidence</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(d) Commensurate in Scope</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(e) Comparison With Closest Prior Art</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(f) Advantages Disclosed or Inherent</div></div>
+        <div class="subtopic reserved"><div class="topic-title">716.02(g) [Reserved]</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">716.03 Commercial Success</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">716.03(a) Commensurate in Scope</div></div>
+        <div class="subtopic"><div class="topic-title">716.03(b) Derived From Claimed Invention</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">716.04 Long-Felt Need and Failure of Others</div></div>
+    <div class="subtopic"><div class="topic-title">716.05 Skepticism of Experts</div></div>
+    <div class="subtopic"><div class="topic-title">716.06 Copying</div></div>
+    <div class="subtopic"><div class="topic-title">716.07 Inoperability of References</div></div>
+    <div class="subtopic"><div class="topic-title">716.08 Utility and Operability of Applicant’s Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">716.09 Sufficiency of Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">716.10 Attribution Affidavit or Declaration (Pre-AIA 102/103)</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 717 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">717 Prior Art Exceptions under AIA 35 U.S.C. 102(b)(1) and (2)</div>
+  <div class="children">
+
+    <div class="subtopic">
+      <div class="topic-title toggle">717.01 Affidavit or Declaration Under 37 CFR 1.130</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">717.01(a) Declarations or Affidavits under 37 CFR 1.130(a) – Attribution</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(a)(1) Evaluation of Declarations or Affidavits under 37 CFR 1.130(a)</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(b) Declarations or Affidavits under 37 CFR 1.130(b) – Prior Public Disclosure</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(b)(1) Evaluation of Declarations or Affidavits under 37 CFR 1.130(b)</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(b)(2) Determining Whether Subject Matter Is the Same</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(c) Who May Make Affidavit or Declaration; Formal Requirements</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(d) U.S. Patent or Application Publication Claiming Same Invention</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(e) Passed Upon by Primary Examiner</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(f) Seasonable (Timely) Presentation</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">717.02 Prior Art Exception for Commonly Owned or JRA Subject Matter</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">717.02(a) Invoking the Prior Art Exception</div></div>
+        <div class="subtopic"><div class="topic-title">717.02(b) Evaluating Whether Properly Invoked</div></div>
+        <div class="subtopic"><div class="topic-title">717.02(c) Examination Procedure</div></div>
+        <div class="subtopic"><div class="topic-title">717.02(d) Form Paragraphs</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== 718 ===================== -->
+<div class="topic">
+  <div class="topic-title">718 Affidavit or Declaration to Disqualify Commonly Owned Patent as Prior Art, 37 CFR 1.131(c)</div>
+</div>
+
+
+<!-- ===================== 719 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">719 File Wrapper</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">719.01 Papers in Image File Wrapper</div></div>
+    <div class="subtopic"><div class="topic-title">719.02 Residence of Inventor Changed</div></div>
+    <div class="subtopic"><div class="topic-title">719.03 Classification During Examination</div></div>
+    <div class="subtopic"><div class="topic-title">719.04 Index of Claims</div></div>
+    <div class="subtopic"><div class="topic-title">719.05 Field of Search</div></div>
+  </div>
+</div>
+
+<!-- ===================== 720 ===================== -->
+<div class="topic">
+  <div class="topic-title">720 Public Use Proceedings</div>
+</div>
+
+<!-- ===================== 721–723 ===================== -->
+<div class="topic reserved">
+  <div class="topic-title">721–723 [Reserved]</div>
+</div>
+
+<!-- ===================== 724 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">724 Trade Secret, Proprietary, and Protective Order Materials</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">724.01 Completeness of the Patent File Wrapper</div></div>
+    <div class="subtopic"><div class="topic-title">724.02 Method of Submitting Trade Secret, Proprietary, and/or Protective Order Materials</div></div>
+    <div class="subtopic"><div class="topic-title">724.03 Types of Trade Secret, Proprietary, and/or Protective Order Materials Submitted Under MPEP § 724.02</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">724.04 Office Treatment and Handling of Materials Submitted Under MPEP § 724.02</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">724.04(a) Materials Submitted in an Application Covered by 35 U.S.C. 122</div></div>
+        <div class="subtopic"><div class="topic-title">724.04(b) Materials Submitted in Reissue Applications Open to the Public Under 37 CFR 1.11(b)</div></div>
+        <div class="subtopic"><div class="topic-title">724.04(c) Materials Submitted in Reexamination File Open to the Public Under 37 CFR 1.11(d)</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">724.05 Petition To Expunge Information or Copy of Papers in Application File</div></div>
+    <div class="subtopic"><div class="topic-title">724.06 Handling of Petitions To Expunge Information or Copy of Papers in Application File</div></div>
+  </div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<script>
+  document.querySelectorAll(".toggle").forEach(t => {
+    t.addEventListener("click", () => {
+      const children = t.nextElementSibling;
+      if (children) {
+        children.style.display =
+          children.style.display === "block" ? "none" : "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
