@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MPEP Navigator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT PANEL */
+#left-panel {
+  width: 260px;
+  background: #1f2937;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chapter-link {
+  padding: 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.chapter-link:hover {
+  background: #374151;
+}
+
+/* RIGHT PANEL */
+#right-panel {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* TREE STRUCTURE */
+.node {
+  margin: 4px 0;
+}
+
+.label {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.label:hover {
+  background: #e5e7eb;
+}
+
+.children {
+  margin-left: 20px;
+  display: none;
+}
+
+.reserved {
+  font-style: italic;
+  color: #6b7280;
+}
+
+.chapter-section {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= LEFT PANEL ================= -->
+<div id="left-panel">
+  <div class="chapter-link" data-target="chapter-600">
+    Chapter 600 – Content of Applications
+  </div>
+  <div class="chapter-link" data-target="chapter-700">
+    Chapter 700 – Examination of Applications
+  </div>
+    <div class="chapter-link" data-target="chapter-1200">
+    Chapter 1200 – Appeal
+  </div>
+      <div class="chapter-link" data-target="chapter-1800">
+    Chapter 1800 – PCT
+  </div>
+  <div class="chapter-link" data-target="chapter-2100">
+    Chapter 2100 – Patentability
+  </div>
+</div>
+
+<!-- ================= RIGHT PANEL ================= -->
+<div id="right-panel">
+
+<!-- ========== CHAPTER 600 ========== -->
+<div class="chapter-section" id="chapter-600">
+<h2>Chapter 600 – Content of Applications</h2>
+<!-- ===================== 601 ===================== -->
+<div class="node">
+  <div class="label toggle">601 Content of Provisional and Nonprovisional Applications</div>
+  <div class="children">
+
+    <div class="node">
+      <div class="label toggle">601.01 Complete Application</div>
+      <div class="children">
+        <div class="node"><div class="label">601.01(a) Nonprovisional Applications Filed Under 35 U.S.C. 111(a)</div></div>
+        <div class="node"><div class="label">601.01(b) Provisional Applications Filed Under 35 U.S.C. 111(b)</div></div>
+        <div class="node"><div class="label">601.01(c) Conversion to or from a Provisional Application</div></div>
+        <div class="node"><div class="label">601.01(d) Application Filed Without All Pages of Specification</div></div>
+        <div class="node"><div class="label">601.01(e) Nonprovisional Application Filed Without at Least One Claim</div></div>
+        <div class="node"><div class="label">601.01(f) Applications Filed Without Drawings</div></div>
+        <div class="node"><div class="label">601.01(g) Applications Filed Without All Figures of Drawings</div></div>
+      </div>
+    </div>
+
+    <div class="node"><div class="label">601.02 Power of Attorney</div></div>
+
+    <div class="node">
+      <div class="label toggle">601.03 Correspondence Address</div>
+      <div class="children">
+        <div class="node"><div class="label">601.03(a) Change of Correspondence Address in Applications Filed On or After September 16, 2012</div></div>
+        <div class="node"><div class="label">601.03(b) Change of Correspondence Address in Applications Filed Before September 16, 2012</div></div>
+      </div>
+    </div>
+
+    <div class="node"><div class="label">601.04 National Stage Requirements of the United States as a Designated Office</div></div>
+
+    <div class="node">
+      <div class="label toggle">601.05 Bibliographic Information – Application Data Sheet (ADS)</div>
+      <div class="children">
+        <div class="node"><div class="label">601.05(a) Application Data Sheet (ADS) — Application Filed On or After September 16, 2012</div></div>
+        <div class="node"><div class="label">601.05(b) Application Data Sheet (ADS) in Application Filed Before September 16, 2012</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== 602 ===================== -->
+<div class="node">
+  <div class="label toggle">602 Naming the Inventor; Inventor’s Oath or Declaration</div>
+  <div class="children">
+
+    <div class="node">
+      <div class="label toggle">602.01 Inventor’s Oath or Declaration</div>
+      <div class="children">
+        <div class="node"><div class="label">602.01(a) Inventor’s Oath or Declaration in Application Filed On or After September 16, 2012</div></div>
+        <div class="node"><div class="label">602.01(b) Inventor’s Oath or Declaration in Application Filed Before September 16, 2012</div></div>
+
+        <div class="node">
+          <div class="label toggle">602.01(c) Correction of Inventorship, Name of Inventor, and Order of Names</div>
+          <div class="children">
+            <div class="node"><div class="label">602.01(c)(1) Correction of Inventorship – Request Filed On or After September 16, 2012</div></div>
+            <div class="node"><div class="label">602.01(c)(2) Correcting or Updating Inventor Name (37 CFR 1.48(f))</div></div>
+            <div class="node"><div class="label reserved">602.01(c)(3) [Reserved]</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="node"><div class="label">602.02 New Oath or Substitute for Original</div></div>
+    <div class="node"><div class="label">602.03 Office Finds the Inventor’s Oath or Declaration Defective</div></div>
+    <div class="node"><div class="label">602.04 Foreign Executed Oath</div></div>
+
+    <div class="node">
+      <div class="label toggle">602.05 Oath or Declaration in Continuing Applications</div>
+      <div class="children">
+        <div class="node"><div class="label">602.05(a) Filed On or After September 16, 2012</div></div>
+        <div class="node"><div class="label">602.05(b) Filed Before September 16, 2012</div></div>
+      </div>
+    </div>
+
+    <div class="node"><div class="label">602.06 Non-English Oath or Declaration</div></div>
+    <div class="node"><div class="label">602.07 Oath or Declaration Filed in United States as a Designated Office</div></div>
+
+    <div class="node">
+      <div class="label toggle">602.08 Inventor and Application Information</div>
+      <div class="children">
+        <div class="node"><div class="label">602.08(a) Inventor Bibliographic Information</div></div>
+        <div class="node"><div class="label">602.08(b) Inventor Signature and Name</div></div>
+        <div class="node"><div class="label">602.08(c) Identification of Application</div></div>
+      </div>
+    </div>
+
+    <div class="node"><div class="label">602.09 Joint Inventors</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 603–607 ===================== -->
+<div class="node"><div class="label">603 Supplemental Oath or Declaration</div></div>
+<div class="node"><div class="label">603.01 Supplemental Oath or Declaration Filed After Allowance</div></div>
+
+<div class="node"><div class="label">604 Substitute Statements</div></div>
+
+<div class="node">
+  <div class="label toggle">605 Applicant</div>
+  <div class="children">
+    <div class="node"><div class="label">605.01 Applicant Filed On or After September 16, 2012</div></div>
+    <div class="node"><div class="label">605.02 Applicant Filed Before September 16, 2012</div></div>
+  </div>
+</div>
+
+<div class="node">
+  <div class="label toggle">606 Title of Invention</div>
+  <div class="children">
+    <div class="node"><div class="label">606.01 Examiner May Require Change in Title</div></div>
+  </div>
+</div>
+
+<div class="node">
+  <div class="label toggle">607 Filing Fee</div>
+  <div class="children">
+    <div class="node"><div class="label reserved">607.01 [Reserved]</div></div>
+    <div class="node"><div class="label">607.02 Returnability of Fees</div></div>
+  </div>
+</div>
+
+<!-- ===================== 608 ===================== -->
+<div class="node">
+  <div class="label toggle">608 Disclosure</div>
+  <div class="children">
+
+    <div class="node">
+      <div class="label toggle">608.01 Specification</div>
+      <div class="children">
+        <div class="node"><div class="label">608.01(a) Arrangement of Application</div></div>
+        <div class="node"><div class="label">608.01(b) Abstract of the Disclosure</div></div>
+        <div class="node"><div class="label">608.01(c) Background of the Invention</div></div>
+        <div class="node"><div class="label">608.01(d) Brief Summary of Invention</div></div>
+        <div class="node"><div class="label reserved">608.01(e) [Reserved]</div></div>
+        <div class="node"><div class="label">608.01(f) Brief Description of Drawings</div></div>
+        <div class="node"><div class="label">608.01(g) Detailed Description of Invention</div></div>
+        <div class="node"><div class="label">608.01(h) Mode of Operation of Invention</div></div>
+        <div class="node"><div class="label">608.01(i) Claims</div></div>
+        <div class="node"><div class="label">608.01(j) Numbering of Claims</div></div>
+        <div class="node"><div class="label">608.01(k) Statutory Requirement of Claims</div></div>
+        <div class="node"><div class="label">608.01(l) Claims Present on the Application Filing Date</div></div>
+        <div class="node"><div class="label">608.01(m) Form of Claims</div></div>
+        <div class="node"><div class="label">608.01(n) Dependent Claims</div></div>
+        <div class="node"><div class="label">608.01(o) Basis for Claim Terminology in Description</div></div>
+        <div class="node"><div class="label">608.01(p) Completeness of Specification</div></div>
+        <div class="node"><div class="label">608.01(q) Substitute or Rewritten Specification</div></div>
+        <div class="node"><div class="label">608.01(r) Derogatory Remarks About Prior Art</div></div>
+        <div class="node"><div class="label">608.01(s) Restoration of Canceled Matter</div></div>
+        <div class="node"><div class="label">608.01(t) Use in Subsequent Application</div></div>
+        <div class="node"><div class="label reserved">608.01(u) [Reserved]</div></div>
+        <div class="node"><div class="label">608.01(v) Marks Used in Commerce and Trade Names</div></div>
+        <div class="node"><div class="label">608.01(w) Copyright and Mask Work Notices</div></div>
+      </div>
+    </div>
+
+    <div class="node"><div class="label">608.02 Drawings</div></div>
+    <div class="node"><div class="label">608.03 Models, Exhibits, Specimens</div></div>
+    <div class="node"><div class="label">608.04 New Matter</div></div>
+    <div class="node"><div class="label">608.05 Sequence Listings / Large Tables / Computer Program Listings</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 609 ===================== -->
+<div class="node">
+  <div class="label toggle">609 Information Disclosure Statement</div>
+  <div class="children">
+    <div class="node"><div class="label">609.01 Examiner Checklist for IDS</div></div>
+    <div class="node"><div class="label">609.02 IDS in Continued Examinations or Continuing Applications</div></div>
+    <div class="node"><div class="label">609.03 IDS in National Stage Applications</div></div>
+
+    <div class="node">
+      <div class="label toggle">609.04 Content and Timing Requirements</div>
+      <div class="children">
+        <div class="node"><div class="label">609.04(a) Content Requirements</div></div>
+        <div class="node"><div class="label">609.04(b) Timing Requirements</div></div>
+      </div>
+    </div>
+
+    <div class="node">
+      <div class="label toggle">609.05 Examiner Handling of IDS</div>
+      <div class="children">
+        <div class="node"><div class="label">609.05(a) Noncomplying IDS</div></div>
+        <div class="node"><div class="label">609.05(b) Complying IDS</div></div>
+        <div class="node"><div class="label">609.05(c) Documents Submitted with Reply</div></div>
+      </div>
+    </div>
+
+    <div class="node"><div class="label">609.06 Information Printed on Patent</div></div>
+    <div class="node"><div class="label">609.07 IDSs Electronically Submitted (eIDS)</div></div>
+    <div class="node"><div class="label">609.08 Electronic Processing of IDS</div></div>
+
+  </div>
+</div>
+</div>
+<!-- ========== CHAPTER 700 ========== -->
+<div class="chapter-section" id="chapter-700">
+<h2>Chapter 700 – Examination of Applications</h2>
+
+<!-- ===================== 701 ===================== -->
+<div class="topic">
+  <div class="topic-title">701 Statutory Authority for Examination</div>
+</div>
+
+<!-- ===================== 702 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">702 Requisites of the Application</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title">702.01 Obviously Informal Cases</div>
+    </div>
+  </div>
+</div>
+
+<div class="topic reserved">
+  <div class="topic-title">703 [Reserved]</div>
+</div>
+
+<!-- ===================== 704 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">704 Search and Requirements for Information</div>
+  <div class="children">
+
+    <div class="subtopic"><div class="topic-title">704.01 Search</div></div>
+    <div class="subtopic reserved"><div class="topic-title">704.02–704.09 [Reserved]</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">704.10 Requirements for Information</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">704.11 What Information May Be Required</div></div>
+        <div class="subtopic"><div class="topic-title">704.11(a) Examples of Information Reasonably Required</div></div>
+        <div class="subtopic"><div class="topic-title">704.11(b) When May a Requirement for Information Be Made</div></div>
+        <div class="subtopic"><div class="topic-title">704.12 Replies to a Requirement for Information</div></div>
+        <div class="subtopic"><div class="topic-title">704.12(a) Relationship to Duty of Disclosure</div></div>
+        <div class="subtopic"><div class="topic-title">704.12(b) What Constitutes a Complete Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.12(c) Treatment of an Incomplete Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.13 Time Periods for Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.14 Making a Requirement for Information</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(a) Format of the Requirement</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(b) Examiner’s Obligation Following Applicant’s Reply</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(c) Petitions to Requirements Under 37 CFR 1.105</div></div>
+        <div class="subtopic"><div class="topic-title">704.14(d) Relationship to IDS</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== 705 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">705 Patentability Reports</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">705.01 Instructions re Patentability Reports</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(a) Nature of P.R., Its Use and Disposal</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(b) Sequence of Examination</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(c) Counting and Recording P.R.s</div></div>
+    <div class="subtopic reserved"><div class="topic-title">705.01(d) [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(e) Limitation as to Use</div></div>
+    <div class="subtopic"><div class="topic-title">705.01(f) Interviews With Applicants</div></div>
+  </div>
+</div>
+
+<!-- ===================== 706 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">706 Rejection of Claims</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">706.01 Contrasted With Objections</div></div>
+    <div class="subtopic"><div class="topic-title">706.02 Rejection on Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">706.03 Rejections Not Based on Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">706.04 Rejection of Previously Allowed Claims</div></div>
+    <div class="subtopic"><div class="topic-title">706.05 Rejection After Allowance</div></div>
+    <div class="subtopic"><div class="topic-title">706.06 Rejection of Claims Copied From Patent</div></div>
+    <div class="subtopic"><div class="topic-title">706.07 Final Rejection</div></div>
+    <div class="subtopic"><div class="topic-title">706.07(a)–(h) Final Rejection Practice</div></div>
+  </div>
+</div>
+
+<!-- ===================== 707 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">707 Examiner’s Letter or Action</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">707.01 Primary Examiner Indicates Action</div></div>
+    <div class="subtopic"><div class="topic-title">707.02 Applications Up for Third Action</div></div>
+    <div class="subtopic"><div class="topic-title">707.05 Citation of References</div></div>
+    <div class="subtopic"><div class="topic-title">707.06 Citation of Decisions</div></div>
+    <div class="subtopic"><div class="topic-title">707.07 Completeness and Clarity</div></div>
+  </div>
+</div>
+
+<!-- ===================== 708 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">708 Order of Examination</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">708.01 List of Special Cases</div></div>
+    <div class="subtopic">
+      <div class="topic-title toggle">708.02 Petition To Make Special</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">708.02(a) Accelerated Examination</div></div>
+        <div class="subtopic"><div class="topic-title">708.02(b) Prioritized Examination</div></div>
+        <div class="subtopic"><div class="topic-title">708.02(c) Patent Prosecution Highway Program</div></div>
+      </div>
+    </div>
+    <div class="subtopic"><div class="topic-title">708.03 Examiner Tenders Resignation</div></div>
+  </div>
+</div>
+
+<!-- ===================== 709 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">709 Suspension of Action</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title">709.01 Overlapping Applications by Same Applicant or Owned by Same Assignee</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 710 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">710 Period for Reply</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title toggle">710.01 Statutory Period</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">710.01(a) Statutory Period, How Computed</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">710.02 Shortened Statutory Period and Time Limit Actions Computed</div>
+      <div class="children">
+        <div class="subtopic reserved"><div class="topic-title">710.02(a) [Reserved]</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(b) Shortened Statutory Period: Situations in Which Used</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(c) Specified Time Limits: Situations in Which Used</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(d) Difference Between Shortened Statutory Periods for Reply and Specified Time Limits</div></div>
+        <div class="subtopic"><div class="topic-title">710.02(e) Extension of Time</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic reserved"><div class="topic-title">710.03 [Reserved]</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">710.04 Two Periods Running</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">710.04(a) Copying Patent Claims</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">710.05 Period Ending on Saturday, Sunday, or a Federal Holiday</div></div>
+    <div class="subtopic"><div class="topic-title">710.06 Situations When Reply Period Is Reset or Restarted</div></div>
+  </div>
+</div>
+
+<!-- ===================== 711 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">711 Abandonment of Patent Application</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">711.01 Express or Formal Abandonment</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.02 Failure To Take Required Action During Statutory Period</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.02(a) Insufficiency of Reply</div></div>
+        <div class="subtopic"><div class="topic-title">711.02(b) Special Situations Involving Abandonment</div></div>
+        <div class="subtopic"><div class="topic-title">711.02(c) Termination of Proceedings</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.03 Reconsideration of Holding of Abandonment; Revival</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.03(a) Holding Based on Insufficiency of Reply</div></div>
+        <div class="subtopic"><div class="topic-title">711.03(b) Holding Based on Failure To Reply Within Period</div></div>
+        <div class="subtopic"><div class="topic-title">711.03(c) Petitions Relating to Abandonment</div></div>
+        <div class="subtopic"><div class="topic-title">711.03(d) Examiner’s Statement on Petition To Set Aside Examiner’s Holding</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.04 Public Access to Abandoned Applications</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.04(a) Date of Abandonment</div></div>
+        <div class="subtopic"><div class="topic-title">711.04(b) Ordering of Patented and Abandoned Files</div></div>
+        <div class="subtopic"><div class="topic-title">711.04(c) Notifying Applicants of Abandonment</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">711.05 Letter of Abandonment Received After Application Is Allowed</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">711.06 Abstracts, Abbreviatures, and Defensive Publications</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">711.06(a) Citation and Use of Abstracts, Abbreviatures, and Defensive Publications as References</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 712 ===================== -->
+<div class="topic reserved">
+  <div class="topic-title">712 [Reserved]</div>
+</div>
+
+<!-- ===================== 713 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">713 Interviews</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">713.01 General Policy, How Conducted</div></div>
+    <div class="subtopic"><div class="topic-title">713.02 Interviews Prior to First Official Action</div></div>
+    <div class="subtopic"><div class="topic-title">713.03 Interview for “Sounding Out” Examiner Not Permitted</div></div>
+    <div class="subtopic"><div class="topic-title">713.04 Substance of Interview Must Be Made of Record</div></div>
+    <div class="subtopic"><div class="topic-title">713.05 Interviews Prohibited or Granted, Special Situations</div></div>
+    <div class="subtopic"><div class="topic-title">713.06 No Inter Partes Questions Discussed Ex Parte</div></div>
+    <div class="subtopic"><div class="topic-title">713.07 Exposure of Other Cases</div></div>
+    <div class="subtopic"><div class="topic-title">713.08 Demonstration, Exhibits, Models</div></div>
+    <div class="subtopic"><div class="topic-title">713.09 Interviews Between Final Rejection and Notice of Appeal</div></div>
+    <div class="subtopic"><div class="topic-title">713.10 Interview Preceding Filing Amendment Under 37 CFR 1.312</div></div>
+  </div>
+</div>
+
+<!-- ===================== 714 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">714 Amendments, Applicant’s Action</div>
+  <div class="children">
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.01 Signatures to Amendments</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">714.01(a) Unsigned or Improperly Signed Amendment</div></div>
+        <div class="subtopic reserved"><div class="topic-title">714.01(b) [Reserved]</div></div>
+        <div class="subtopic"><div class="topic-title">714.01(c) Signed by Attorney or Agent Not of Record</div></div>
+        <div class="subtopic"><div class="topic-title">714.01(d) Amendment Signed by Applicant but Not by Attorney or Agent of Record</div></div>
+        <div class="subtopic"><div class="topic-title">714.01(e) Amendments Before First Office Action</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.02 Must Be Fully Responsive</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.03 Amendments Not Fully Responsive, Action To Be Taken</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">714.03(a) Supplemental Amendment</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.04 Claims Presented in Amendment With No Attempt To Point Out Patentable Novelty</div></div>
+    <div class="subtopic"><div class="topic-title">714.05 Examiner Should Immediately Review</div></div>
+    <div class="subtopic reserved"><div class="topic-title">714.06 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">714.07 Amendments Not in Permanent Ink</div></div>
+    <div class="subtopic reserved"><div class="topic-title">714.08–714.09 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">714.10 Claims Added in Excess of Claims Previously Paid For</div></div>
+    <div class="subtopic"><div class="topic-title">714.11 Amendment Filed During Interference Proceedings</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.12 Amendments and Other Replies After Final Rejection or Action</div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.13 Amendments and Other Replies After Final Rejection or Action, Procedure Followed</div></div>
+    <div class="subtopic"><div class="topic-title">714.14 Amendments After Allowance of All Claims</div></div>
+    <div class="subtopic"><div class="topic-title">714.15 Amendment Received in Technology Center After Mailing of Notice of Allowance</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">714.16 Amendment After Notice of Allowance, 37 CFR 1.312</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">714.16(a) Amendments Under 37 CFR 1.312, Copied Patent Claims</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(b) Amendments Under 37 CFR 1.312 Filed With a Motion Under 37 CFR 41.208</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(c) Amendments Under 37 CFR 1.312, Additional Claims</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(d) Amendments Under 37 CFR 1.312, Handling</div></div>
+        <div class="subtopic"><div class="topic-title">714.16(e) Amendments Under 37 CFR 1.312, Entry in Part</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">714.17 Amendment Filed After the Period for Reply Has Expired</div></div>
+    <div class="subtopic"><div class="topic-title">714.18 Entry of Amendments</div></div>
+    <div class="subtopic"><div class="topic-title">714.19 List of Amendments, Entry Denied</div></div>
+    <div class="subtopic"><div class="topic-title">714.20 List of Amendments Entered in Part</div></div>
+    <div class="subtopic"><div class="topic-title">714.21 Amendments Inadvertently Entered, No Legal Effect</div></div>
+    <div class="subtopic reserved"><div class="topic-title">714.22–714.24 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">714.25 Discourtesy of Applicant or Attorney</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 715 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">715 Swearing Behind a Reference — Affidavit or Declaration Under 37 CFR 1.131(a)</div>
+  <div class="children">
+
+    <div class="subtopic"><div class="topic-title">715.01 37 CFR 1.131(a) Affidavits Versus 37 CFR 1.132 Affidavits</div></div>
+
+    <div class="subtopic"><div class="topic-title">715.01(a) Reference Is a Patent or Published Application Naming Different Inventive Entity With at Least One Common Inventor</div></div>
+    <div class="subtopic"><div class="topic-title">715.01(b) Reference and Application Have Common Assignee</div></div>
+    <div class="subtopic"><div class="topic-title">715.01(c) Reference Is Publication of Inventor’s Own Invention</div></div>
+    <div class="subtopic"><div class="topic-title">715.01(d) Activities Applied Against the Claims</div></div>
+
+    <div class="subtopic"><div class="topic-title">715.02 How Much of the Claimed Invention Must Be Shown, Including the General Rule as to Generic Claims</div></div>
+    <div class="subtopic"><div class="topic-title">715.03 Genus-Species, Practice Relative to Cases Where Predictability Is in Question</div></div>
+    <div class="subtopic"><div class="topic-title">715.04 Who May Make Affidavit or Declaration Under 37 CFR 1.131(a); Formal Requirements</div></div>
+    <div class="subtopic"><div class="topic-title">715.05 U.S. Patent or Application Publication Claiming Same Invention</div></div>
+    <div class="subtopic reserved"><div class="topic-title">715.06 [Reserved]</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">715.07 Facts and Documentary Evidence</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">715.07(a) Diligence</div></div>
+        <div class="subtopic"><div class="topic-title">715.07(b) Interference Testimony Sometimes Used</div></div>
+        <div class="subtopic"><div class="topic-title">715.07(c) Acts Must Have Been Carried Out in This Country or NAFTA/WTO Country</div></div>
+        <div class="subtopic"><div class="topic-title">715.07(d) Disposition of Exhibits</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">715.08 Decided by Primary Examiner</div></div>
+    <div class="subtopic"><div class="topic-title">715.09 Timely Presentation</div></div>
+    <div class="subtopic"><div class="topic-title">715.10 Review of Affidavit or Declaration for Public Use, Sale, or Best Mode</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 716 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">716 Affidavits or Declarations Under 37 CFR 1.132 and Other Evidence Traversing Rejections</div>
+  <div class="children">
+
+    <div class="subtopic">
+      <div class="topic-title toggle">716.01 Generally Applicable Criteria</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">716.01(a) Objective Evidence of Nonobviousness</div></div>
+        <div class="subtopic"><div class="topic-title">716.01(b) Nexus Requirement and Evidence of Nonobviousness</div></div>
+        <div class="subtopic"><div class="topic-title">716.01(c) Probative Value of Objective Evidence</div></div>
+        <div class="subtopic"><div class="topic-title">716.01(d) Weighing Objective Evidence</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">716.02 Allegations of Unexpected Results</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">716.02(a) Evidence Must Show Unexpected Results</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(b) Burden on Applicant</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(c) Weighing Evidence</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(d) Commensurate in Scope</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(e) Comparison With Closest Prior Art</div></div>
+        <div class="subtopic"><div class="topic-title">716.02(f) Advantages Disclosed or Inherent</div></div>
+        <div class="subtopic reserved"><div class="topic-title">716.02(g) [Reserved]</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">716.03 Commercial Success</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">716.03(a) Commensurate in Scope</div></div>
+        <div class="subtopic"><div class="topic-title">716.03(b) Derived From Claimed Invention</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">716.04 Long-Felt Need and Failure of Others</div></div>
+    <div class="subtopic"><div class="topic-title">716.05 Skepticism of Experts</div></div>
+    <div class="subtopic"><div class="topic-title">716.06 Copying</div></div>
+    <div class="subtopic"><div class="topic-title">716.07 Inoperability of References</div></div>
+    <div class="subtopic"><div class="topic-title">716.08 Utility and Operability of Applicant’s Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">716.09 Sufficiency of Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">716.10 Attribution Affidavit or Declaration (Pre-AIA 102/103)</div></div>
+
+  </div>
+</div>
+
+<!-- ===================== 717 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">717 Prior Art Exceptions under AIA 35 U.S.C. 102(b)(1) and (2)</div>
+  <div class="children">
+
+    <div class="subtopic">
+      <div class="topic-title toggle">717.01 Affidavit or Declaration Under 37 CFR 1.130</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">717.01(a) Declarations or Affidavits under 37 CFR 1.130(a) – Attribution</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(a)(1) Evaluation of Declarations or Affidavits under 37 CFR 1.130(a)</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(b) Declarations or Affidavits under 37 CFR 1.130(b) – Prior Public Disclosure</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(b)(1) Evaluation of Declarations or Affidavits under 37 CFR 1.130(b)</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(b)(2) Determining Whether Subject Matter Is the Same</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(c) Who May Make Affidavit or Declaration; Formal Requirements</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(d) U.S. Patent or Application Publication Claiming Same Invention</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(e) Passed Upon by Primary Examiner</div></div>
+        <div class="subtopic"><div class="topic-title">717.01(f) Seasonable (Timely) Presentation</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">717.02 Prior Art Exception for Commonly Owned or JRA Subject Matter</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">717.02(a) Invoking the Prior Art Exception</div></div>
+        <div class="subtopic"><div class="topic-title">717.02(b) Evaluating Whether Properly Invoked</div></div>
+        <div class="subtopic"><div class="topic-title">717.02(c) Examination Procedure</div></div>
+        <div class="subtopic"><div class="topic-title">717.02(d) Form Paragraphs</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== 718 ===================== -->
+<div class="topic">
+  <div class="topic-title">718 Affidavit or Declaration to Disqualify Commonly Owned Patent as Prior Art, 37 CFR 1.131(c)</div>
+</div>
+
+
+<!-- ===================== 719 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">719 File Wrapper</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">719.01 Papers in Image File Wrapper</div></div>
+    <div class="subtopic"><div class="topic-title">719.02 Residence of Inventor Changed</div></div>
+    <div class="subtopic"><div class="topic-title">719.03 Classification During Examination</div></div>
+    <div class="subtopic"><div class="topic-title">719.04 Index of Claims</div></div>
+    <div class="subtopic"><div class="topic-title">719.05 Field of Search</div></div>
+  </div>
+</div>
+
+<!-- ===================== 720 ===================== -->
+<div class="topic">
+  <div class="topic-title">720 Public Use Proceedings</div>
+</div>
+
+<!-- ===================== 721–723 ===================== -->
+<div class="topic reserved">
+  <div class="topic-title">721–723 [Reserved]</div>
+</div>
+
+<!-- ===================== 724 ===================== -->
+<div class="topic">
+  <div class="topic-title toggle">724 Trade Secret, Proprietary, and Protective Order Materials</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">724.01 Completeness of the Patent File Wrapper</div></div>
+    <div class="subtopic"><div class="topic-title">724.02 Method of Submitting Trade Secret, Proprietary, and/or Protective Order Materials</div></div>
+    <div class="subtopic"><div class="topic-title">724.03 Types of Trade Secret, Proprietary, and/or Protective Order Materials Submitted Under MPEP § 724.02</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">724.04 Office Treatment and Handling of Materials Submitted Under MPEP § 724.02</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">724.04(a) Materials Submitted in an Application Covered by 35 U.S.C. 122</div></div>
+        <div class="subtopic"><div class="topic-title">724.04(b) Materials Submitted in Reissue Applications Open to the Public Under 37 CFR 1.11(b)</div></div>
+        <div class="subtopic"><div class="topic-title">724.04(c) Materials Submitted in Reexamination File Open to the Public Under 37 CFR 1.11(d)</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">724.05 Petition To Expunge Information or Copy of Papers in Application File</div></div>
+    <div class="subtopic"><div class="topic-title">724.06 Handling of Petitions To Expunge Information or Copy of Papers in Application File</div></div>
+  </div>
+</div>
+
+</div>
+<!-- ========== CHAPTER 1200 ========== -->
+<div class="chapter-section" id="chapter-1200">
+<h2>Chapter 1200 – Appeal</h2>
+<div class="topic">
+  <div class="topic-title toggle">1201 Introduction</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1202 Composition of Board</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1203 Administrative Handling</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1204 Notice of Appeal</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1204.01 Reinstatement of Appeal</div></div>
+    <div class="subtopic"><div class="topic-title">1204.02 Pre-Appeal Brief Review Request and Conference Pilot Program</div></div>
+    <div class="subtopic"><div class="topic-title">1204.03 Interviews After Notice of Appeal</div></div>
+    <div class="subtopic"><div class="topic-title">1204.04 Official Record on Appeal</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1205 Appeal Brief</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1205.01 Time for Filing Appeal Brief</div></div>
+    <div class="subtopic"><div class="topic-title">1205.02 Appeal Brief Content</div></div>
+    <div class="subtopic"><div class="topic-title">1205.03 Non-Compliant Appeal Brief and Amended Brief</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1206 Amendments and Affidavits or Other Evidence Filed With or After Appeal</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1207 Examiner’s Answer</div>
+  <div class="children">
+
+    <div class="subtopic"><div class="topic-title">1207.01 Appeal Conference</div></div>
+    <div class="subtopic"><div class="topic-title">1207.02 Contents of Examiner’s Answer</div></div>
+
+    <div class="subtopic">
+      <div class="topic-title toggle">1207.03 New Ground of Rejection in Examiner’s Answer</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">1207.03(a) Determining Whether a Ground of Rejection is New</div></div>
+        <div class="subtopic"><div class="topic-title">1207.03(b) Petition to Designate a New Ground of Rejection and to Reopen Prosecution</div></div>
+        <div class="subtopic"><div class="topic-title">1207.03(c) Appellant's Reply to New Grounds of Rejection</div></div>
+      </div>
+    </div>
+
+    <div class="subtopic"><div class="topic-title">1207.04 Reopening of Prosecution After Appeal</div></div>
+    <div class="subtopic"><div class="topic-title">1207.05 Substitute Examiner’s Answer</div></div>
+
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1208 Reply Briefs and Fee for Forwarding Appeal</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1208.01 Fee for Forwarding an Appeal to the Board</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1209 Oral Hearing</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1210 Actions Subsequent to Examiner’s Answer but Before Board’s Decision</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1211 Remand by Director or Board</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1211.01 Remand by Board for Further Consideration of Rejection</div></div>
+    <div class="subtopic"><div class="topic-title">1211.02 Remand To Consider Amendment</div></div>
+    <div class="subtopic"><div class="topic-title">1211.03 Remand To Consider Affidavits or Declarations</div></div>
+    <div class="subtopic"><div class="topic-title">1211.04 Remand by Board for Further Search</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1212 Board Requires Appellant to Address Matter</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1213 Decision by Board</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1213.01 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">1213.02 New Grounds of Rejection by Board</div></div>
+    <div class="subtopic"><div class="topic-title">1213.03 Publication of and Public Access to Board Decision</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1214 Procedure Following Decision by Board</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1214.01 Procedure Following New Ground of Rejection by Board</div></div>
+    <div class="subtopic"><div class="topic-title">1214.02 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">1214.03 Rehearing</div></div>
+    <div class="subtopic"><div class="topic-title">1214.04 Examiner Reversed in Whole</div></div>
+    <div class="subtopic"><div class="topic-title">1214.05 Cancellation of Claims Not Appealed</div></div>
+    <div class="subtopic"><div class="topic-title">1214.06 Examiner Sustained in Whole or in Part; Claims Require Action</div></div>
+    <div class="subtopic"><div class="topic-title">1214.07 Reopening of Prosecution</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1215 Withdrawal or Dismissal of Appeal</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1215.01 Withdrawal of Appeal</div></div>
+    <div class="subtopic"><div class="topic-title">1215.02 Claims Standing Allowed</div></div>
+    <div class="subtopic"><div class="topic-title">1215.03 Partial Withdrawal</div></div>
+    <div class="subtopic"><div class="topic-title">1215.04 Dismissal of Appeal</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1216 Judicial Review</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1216.01 Appeals to the U.S. Court of Appeals for the Federal Circuit</div></div>
+    <div class="subtopic"><div class="topic-title">1216.02 Civil Suits Under 35 U.S.C. 145 and 146</div></div>
+  </div>
+</div>
+
+
+</div>
+<!-- ========== CHAPTER 1800 ========== -->
+<div class="chapter-section" id="chapter-1800">
+<h2>Chapter 1800 – PCT</h2>
+<div class="topic">
+  <div class="topic-title toggle">1801 Basic Patent Cooperation Treaty (PCT) Principles</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1802 PCT Definitions</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1803 Reservations Under the PCT Taken by, and Notifications of Incompatibility Made by, the United States of America</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1804 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1805 Where To File an International Application</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1806 Applicants and Inventors</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1807 Agent or Common Representative and General Power of Attorney</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1808 Change in or Revocation of the Appointment of an Agent or a Common Representative</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1809 Access to the USPTO patent electronic filing system</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1810 Filing Date Requirements</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1811 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1812 Elements of the International Application</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1813–1816 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1817 PCT Member States</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1818 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1819 Earlier Search</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1820 Signature of Applicant</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1821 The Request</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1822 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1823 The Description</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1823.01 Reference to Deposited Biological Material</div></div>
+    <div class="subtopic"><div class="topic-title">1823.02 Filing Nucleotide and/or Amino Acid Sequence Listings in International Applications</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1824 The Claims</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1825 The Drawings</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1826 The Abstract</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1827 Fees</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1827.01 Refund of International Application Fees</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1828 Priority Claim and Document</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1828.01 Restoration of the Right of Priority</div></div>
+    <div class="subtopic"><div class="topic-title">1828.02 Continuation or Continuation-in-Part Indication in the Request</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1829 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1830 International Application Transmittal Letter</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1831 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1832 License Request for Foreign Filing Under the PCT</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1833 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1834 Correspondence</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1834.01 Filing of Correspondence by Facsimile</div></div>
+    <div class="subtopic"><div class="topic-title">1834.02 Irregularities in the Mail or Electronic Communications Service</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1835 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1836 Rectification of Obvious Mistakes</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1837–1839 [Reserved]</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1840 The International Searching Authority</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1840.01 European Patent Office (ISA)</div></div>
+    <div class="subtopic"><div class="topic-title">1840.02 Korean Intellectual Property Office (ISA)</div></div>
+    <div class="subtopic"><div class="topic-title">1840.03 IP Australia (ISA)</div></div>
+    <div class="subtopic"><div class="topic-title">1840.04 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">1840.05 Israel Patent Office (ISA)</div></div>
+    <div class="subtopic"><div class="topic-title">1840.06 Japan Patent Office (ISA)</div></div>
+    <div class="subtopic"><div class="topic-title">1840.07 IP Office of Singapore (ISA)</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1842 Basic Flow Under the PCT</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1843 The International Search</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1843.01 Prior Art for Chapter I Processing</div></div>
+    <div class="subtopic"><div class="topic-title">1843.02 Certain Subject Matter Need Not Be Searched</div></div>
+    <div class="subtopic"><div class="topic-title">1843.03 No Search Required if Claims Are Unclear</div></div>
+    <div class="subtopic"><div class="topic-title">1843.04 Procedure for Claims Not Required To Be Searched and for Claims That Are Unclear</div></div>
+    <div class="subtopic"><div class="topic-title">1843.05 Time Limit for Establishing ISR and Written Opinion</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1844 International Search Report</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1844.01 Preparing the ISR (Form PCT/ISA/210)</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1845 Written Opinion of the ISA</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1845.01 Preparing Written Opinion (Form PCT/ISA/237)</div></div>
+    <div class="subtopic"><div class="topic-title">1845.02 Notification of Transmittal (Form PCT/ISA/220)</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1850 Unity of Invention Before the ISA</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1853 Amendment Under PCT Article 19</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1857 International Publication</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1860 International Preliminary Examination Procedure</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1864 The Demand and Preparation for Filing of Demand</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">1864.01 Amendments Under PCT Article 34</div></div>
+    <div class="subtopic"><div class="topic-title">1864.02 Applicant’s Right To File a Demand</div></div>
+    <div class="subtopic"><div class="topic-title">1864.03 States Which May Be Elected</div></div>
+    <div class="subtopic"><div class="topic-title">1864.04 Agent’s Right To Act</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1878 Preparation of the Written Opinion of the IPEA</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title toggle">1878.01 Substantive Examination Standards</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">1878.01(a) Prior Art</div></div>
+        <div class="subtopic"><div class="topic-title">1878.01(a)(1) Novelty</div></div>
+        <div class="subtopic"><div class="topic-title">1878.01(a)(2) Inventive Step</div></div>
+        <div class="subtopic"><div class="topic-title">1878.01(a)(3) Industrial Applicability</div></div>
+      </div>
+    </div>
+    <div class="subtopic"><div class="topic-title">1878.02 Reply to the Written Opinion</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">1893 National Stage (35 U.S.C. 371)</div>
+  <div class="children">
+    <div class="subtopic">
+      <div class="topic-title toggle">1893.01 Commencement and Entry</div>
+      <div class="children">
+        <div class="subtopic"><div class="topic-title">1893.01(a) Entry via U.S. Designated/Elected Office</div></div>
+        <div class="subtopic"><div class="topic-title">1893.01(b) Applicant</div></div>
+        <div class="subtopic"><div class="topic-title">1893.01(c) Fees</div></div>
+        <div class="subtopic"><div class="topic-title">1893.01(d) Translation</div></div>
+        <div class="subtopic"><div class="topic-title">1893.01(e) Inventor’s Oath or Declaration</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ========== CHAPTER 2100 ========== -->
+<div class="chapter-section" id="chapter-2100">
+<h2>Chapter 2100 – Patentability</h2>
+<!-- 2101–2102 -->
+<div class="topic">
+  <div class="topic-title">2101–2102 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2103 Patent Examination Process</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2104 Requirements of 35 U.S.C. 101</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2104.01 Barred by Atomic Energy Act</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2105 Patent Eligible Subject Matter — Living Subject Matter</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2106 Patent Subject Matter Eligibility</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2106.01 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">2106.02 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">2106.03 Eligibility Step 1: The Four Categories of Statutory Subject Matter</div></div>
+
+    <div class="subtopic"><div class="topic-title">2106.04 Eligibility Step 2A: Whether a Claim is Directed to a Judicial Exception</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(a) Abstract Ideas</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(a)(1) Examples of Claims That Do Not Recite Abstract Ideas</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(a)(2) Abstract Idea Groupings</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(a)(3) Tentative Abstract Ideas</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(b) Laws of Nature, Natural Phenomena & Products of Nature</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(c) Markedly Different Characteristics Analysis</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(d) Integration of a Judicial Exception Into a Practical Application</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(d)(1) Improvements to Computer or Other Technology</div></div>
+    <div class="subtopic"><div class="topic-title">2106.04(d)(2) Particular Treatment and Prophylaxis</div></div>
+
+    <div class="subtopic"><div class="topic-title">2106.05 Eligibility Step 2B: Significantly More</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(a) Improvements to Technology</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(b) Particular Machine</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(c) Particular Transformation</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(d) Well-Understood, Routine, Conventional Activity</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(e) Other Meaningful Limitations</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(f) Mere Instructions to Apply an Exception</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(g) Insignificant Extra-Solution Activity</div></div>
+    <div class="subtopic"><div class="topic-title">2106.05(h) Field of Use and Technological Environment</div></div>
+
+    <div class="subtopic"><div class="topic-title">2106.06 Streamlined Analysis</div></div>
+    <div class="subtopic"><div class="topic-title">2106.06(a) Eligibility is Self Evident</div></div>
+    <div class="subtopic"><div class="topic-title">2106.06(b) Clear Improvement to Technology</div></div>
+
+    <div class="subtopic"><div class="topic-title">2106.07 Formulating and Supporting Rejections</div></div>
+    <div class="subtopic"><div class="topic-title">2106.07(a) Formulating a Rejection</div></div>
+    <div class="subtopic"><div class="topic-title">2106.07(a)(1) Form Paragraphs</div></div>
+    <div class="subtopic"><div class="topic-title">2106.07(b) Evaluating Applicant’s Response</div></div>
+    <div class="subtopic"><div class="topic-title">2106.07(c) Clarifying the Record</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2107 Utility</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2107.01 General Principles Governing Utility Rejections</div></div>
+    <div class="subtopic"><div class="topic-title">2107.02 Procedural Considerations</div></div>
+    <div class="subtopic"><div class="topic-title">2107.03 Therapeutic or Pharmacological Utilities</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2108 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2109 Inventorship</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2109.01 Joint Inventorship</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2110 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2111 Claim Interpretation; Broadest Reasonable Interpretation</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2111.01 Plain Meaning</div></div>
+    <div class="subtopic"><div class="topic-title">2111.02 Effect of Preamble</div></div>
+    <div class="subtopic"><div class="topic-title">2111.03 Transitional Phrases</div></div>
+    <div class="subtopic"><div class="topic-title">2111.04 Adapted To / Wherein / Whereby</div></div>
+    <div class="subtopic"><div class="topic-title">2111.05 Functional and Nonfunctional Descriptive Material</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2112 Inherency; Burden of Proof</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2112.01 Composition, Product, and Apparatus Claims</div></div>
+    <div class="subtopic"><div class="topic-title">2112.02 Process Claims</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2113 Product-by-Process Claims</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2114 Apparatus and Article Claims — Functional Language</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2115 Material or Article Worked Upon by Apparatus</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2116 Novel, Nonobvious Starting Material or End Product</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2116.01 Novel, Nonobvious Starting Material or End Product</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2117 Markush Claims</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2118–2119 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2120 Rejection on Prior Art</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2120.01 Printed Publication or Patent</div></div>
+    <div class="subtopic"><div class="topic-title">2120.02 Public Use or On Sale</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2121 Prior Art; General Level of Operability</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2121.01 Use of Prior Art Where Operability is in Question</div></div>
+    <div class="subtopic"><div class="topic-title">2121.02 Compounds and Compositions — Enabling Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">2121.03 Plant Genetics — Enabling Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">2121.04 Apparatus and Articles — Enabling Prior Art</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2122 Discussion of Utility in the Prior Art</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2123 Rejection Over Broad Disclosure</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2124 Exception to the Rule That the Reference Must Be Prior Art</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2124.01 Tax Strategies Deemed Within the Prior Art</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2125 Drawings as Prior Art</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2126 Availability of a Document as a “Patent”</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2126.01 Date of Availability of a Patent</div></div>
+    <div class="subtopic"><div class="topic-title">2126.02 Scope of Disclosure of a Patent Reference</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2127 Domestic and Foreign Patent Applications as Prior Art</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2128 Printed Publications as Prior Art</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2128.01 Level of Public Accessibility</div></div>
+    <div class="subtopic"><div class="topic-title">2128.02 Date Publication Is Available</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2129 Admissions as Prior Art</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2130 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2131 Anticipation — 35 U.S.C. 102</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2131.01 Multiple Reference Rejections</div></div>
+    <div class="subtopic"><div class="topic-title">2131.02 Genus-Species Situations</div></div>
+    <div class="subtopic"><div class="topic-title">2131.03 Anticipation of Ranges</div></div>
+    <div class="subtopic"><div class="topic-title">2131.04 Secondary Considerations</div></div>
+    <div class="subtopic"><div class="topic-title">2131.05 Nonanalogous or Disparaging Prior Art</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2132 Pre-AIA 35 U.S.C. 102(a)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2132.01 Overcoming a 102(a) Rejection</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2133 Pre-AIA 35 U.S.C. 102(b)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2133.01 CIP Applications</div></div>
+    <div class="subtopic"><div class="topic-title">2133.02 Publications and Patents</div></div>
+    <div class="subtopic"><div class="topic-title">2133.02(a) Overcoming 102(b) Publication Rejection</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03 Public Use or On Sale</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(a) Public Use</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(b) On Sale</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(c) The Invention</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(d) In This Country</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e) Experimental Use</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(1) Commercial Exploitation</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(2) Intent</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(3) Completeness</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(4) Experimental Purpose Factors</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(5) Supervision and Control</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(6) Permitted Testing</div></div>
+    <div class="subtopic"><div class="topic-title">2133.03(e)(7) Third Party Inventor Activity</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2134 Pre-AIA 35 U.S.C. 102(c)</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2135 Pre-AIA 35 U.S.C. 102(d)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2135.01 Four Requirements of 102(d)</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2136 Pre-AIA 35 U.S.C. 102(e)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2136.01 Unpublished Applications</div></div>
+    <div class="subtopic"><div class="topic-title">2136.02 Content of Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">2136.03 Critical Reference Date</div></div>
+    <div class="subtopic"><div class="topic-title">2136.04 By Another</div></div>
+    <div class="subtopic"><div class="topic-title">2136.05 Overcoming a 102(e) Rejection</div></div>
+    <div class="subtopic"><div class="topic-title">2136.05(a) Antedating</div></div>
+    <div class="subtopic"><div class="topic-title">2136.05(b) Inventor’s Own Work</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2137 Pre-AIA 35 U.S.C. 102(f)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2137.01 [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">2137.02 [Reserved]</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2138 Pre-AIA 35 U.S.C. 102(g)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2138.01 Interference Practice</div></div>
+    <div class="subtopic"><div class="topic-title">2138.02 Made in This Country</div></div>
+    <div class="subtopic"><div class="topic-title">2138.03 Not Abandoned, Suppressed, or Concealed</div></div>
+    <div class="subtopic"><div class="topic-title">2138.04 Conception</div></div>
+    <div class="subtopic"><div class="topic-title">2138.05 Reduction to Practice</div></div>
+    <div class="subtopic"><div class="topic-title">2138.06 Reasonable Diligence</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2139 Rejections Under Pre-AIA 35 U.S.C. 102</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2139.01 Effective Filing Date</div></div>
+    <div class="subtopic"><div class="topic-title">2139.02 Determining Applicable Subsection</div></div>
+    <div class="subtopic"><div class="topic-title">2139.03 Form Paragraphs</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2140 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2141 Obviousness — 35 U.S.C. 103</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2141.01 Scope and Content of the Prior Art</div></div>
+    <div class="subtopic"><div class="topic-title">2141.01(a) Analogous Art</div></div>
+    <div class="subtopic"><div class="topic-title">2141.02 Differences From Claimed Invention</div></div>
+    <div class="subtopic"><div class="topic-title">2141.03 Level of Ordinary Skill</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2142 Prima Facie Obviousness</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2143 Prima Facie Case Examples</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2143.01 Motivation to Combine</div></div>
+    <div class="subtopic"><div class="topic-title">2143.02 Reasonable Expectation of Success</div></div>
+    <div class="subtopic"><div class="topic-title">2143.03 All Limitations Considered</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2144 Supporting a 103 Rejection</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2144.01 Implicit Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2144.02 Scientific Theory</div></div>
+    <div class="subtopic"><div class="topic-title">2144.03 Common Knowledge</div></div>
+    <div class="subtopic"><div class="topic-title">2144.04 Legal Precedent</div></div>
+    <div class="subtopic"><div class="topic-title">2144.05 Overlapping Ranges</div></div>
+    <div class="subtopic"><div class="topic-title">2144.06 Art-Recognized Equivalence</div></div>
+    <div class="subtopic"><div class="topic-title">2144.07 Art-Recognized Suitability</div></div>
+    <div class="subtopic"><div class="topic-title">2144.08 Species From Genus</div></div>
+    <div class="subtopic"><div class="topic-title">2144.09 Chemical Similarity</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2145 Applicant’s Rebuttal Evidence</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2146 Pre-AIA 35 U.S.C. 103(c)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2146.01 Prior Art Disqualification</div></div>
+    <div class="subtopic"><div class="topic-title">2146.02 Common Ownership</div></div>
+    <div class="subtopic"><div class="topic-title">2146.03 Examination Procedure</div></div>
+    <div class="subtopic"><div class="topic-title">2146.03(a) Provisional Rejection</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2147 Biotechnology Process Applications</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2148 Form Paragraphs — Pre-AIA 103</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2149 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2150 Examination Guidelines — AIA 102/103</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2151 Overview of AIA Changes</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2152 AIA 35 U.S.C. 102(a) and (b)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2152.01 Effective Filing Date</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02 Prior Art Categories</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02(a) Patented</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02(b) Printed Publications</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02(c) Public Use</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02(d) On Sale</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02(e) Otherwise Available</div></div>
+    <div class="subtopic"><div class="topic-title">2152.02(f) No “By Others” Requirement</div></div>
+    <div class="subtopic"><div class="topic-title">2152.03 Admissions</div></div>
+    <div class="subtopic"><div class="topic-title">2152.04 Meaning of Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2152.05 Which Subsection Applies</div></div>
+    <div class="subtopic"><div class="topic-title">2152.06 Overcoming Rejections</div></div>
+    <div class="subtopic"><div class="topic-title">2152.07 Form Paragraphs</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2153 AIA 102(b)(1) Exceptions</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2153.01 Grace Period — Inventor Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2153.01(a) Grace Period Details</div></div>
+    <div class="subtopic"><div class="topic-title">2153.01(b) [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">2153.02 Prior Public Disclosure Exception</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2154 AIA 102(a)(2) Subject Matter</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2154.01 U.S. Patent Documents</div></div>
+    <div class="subtopic"><div class="topic-title">2154.01(a) WIPO Publications</div></div>
+    <div class="subtopic"><div class="topic-title">2154.01(b) Effective Filing Date</div></div>
+    <div class="subtopic"><div class="topic-title">2154.01(c) Names Another Inventor</div></div>
+    <div class="subtopic"><div class="topic-title">2154.01(d) Copending Applications</div></div>
+    <div class="subtopic"><div class="topic-title">2154.02 Exceptions — AIA 102(b)(2)</div></div>
+    <div class="subtopic"><div class="topic-title">2154.02(a) Inventor-Originated Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2154.02(b) Prior Public Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2154.02(c) Common Ownership</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2155 Affidavits Under 37 CFR 1.130</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2155.01 Disclosure by Inventor</div></div>
+    <div class="subtopic"><div class="topic-title">2155.02 Prior Public Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2155.03 Disclosure by Another</div></div>
+    <div class="subtopic"><div class="topic-title">2155.04 Enablement</div></div>
+    <div class="subtopic"><div class="topic-title">2155.05 Who May File</div></div>
+    <div class="subtopic"><div class="topic-title">2155.06 When Not Available</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2156 Joint Research Agreements</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2157 Improper Naming of Inventors</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2158 AIA 35 U.S.C. 103</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2158.01 Form Paragraphs</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2159 Applicability Date Provisions</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2159.01 Filed Before March 16, 2013</div></div>
+    <div class="subtopic"><div class="topic-title">2159.02 Filed On or After March 16, 2013</div></div>
+    <div class="subtopic"><div class="topic-title">2159.03 Mixed Effective Filing Dates</div></div>
+    <div class="subtopic"><div class="topic-title">2159.04 Applicant Statement</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2160 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2161 Specification Requirements — 35 U.S.C. 112(a)</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2161.01 Computer-Implemented Inventions</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2162 Policy Underlying 35 U.S.C. 112(a)</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2163 Written Description Requirement</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2163.01 Support in Disclosure</div></div>
+    <div class="subtopic"><div class="topic-title">2163.02 Compliance Standard</div></div>
+    <div class="subtopic"><div class="topic-title">2163.03 Typical Issues</div></div>
+    <div class="subtopic"><div class="topic-title">2163.04 Examiner Burden</div></div>
+    <div class="subtopic"><div class="topic-title">2163.05 Claim Scope Changes</div></div>
+    <div class="subtopic"><div class="topic-title">2163.06 New Matter</div></div>
+    <div class="subtopic"><div class="topic-title">2163.07 Supported Amendments</div></div>
+    <div class="subtopic"><div class="topic-title">2163.07(a) Inherent Function</div></div>
+    <div class="subtopic"><div class="topic-title">2163.07(b) Incorporation by Reference</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2164 Enablement Requirement</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2164.01 Test of Enablement</div></div>
+    <div class="subtopic"><div class="topic-title">2164.01(a) Undue Experimentation</div></div>
+    <div class="subtopic"><div class="topic-title">2164.01(b) How to Make</div></div>
+    <div class="subtopic"><div class="topic-title">2164.01(c) How to Use</div></div>
+    <div class="subtopic"><div class="topic-title">2164.02 Working Examples</div></div>
+    <div class="subtopic"><div class="topic-title">2164.03 Predictability of the Art</div></div>
+    <div class="subtopic"><div class="topic-title">2164.04 Examiner Burden</div></div>
+    <div class="subtopic"><div class="topic-title">2164.05 Evidence as a Whole</div></div>
+    <div class="subtopic"><div class="topic-title">2164.05(a) As of Filing Date</div></div>
+    <div class="subtopic"><div class="topic-title">2164.05(b) Skilled Artisan</div></div>
+    <div class="subtopic"><div class="topic-title">2164.06 Quantity of Experimentation</div></div>
+    <div class="subtopic"><div class="topic-title">2164.06(a) Missing Information</div></div>
+    <div class="subtopic"><div class="topic-title">2164.06(b) Bio/Chemical Cases</div></div>
+    <div class="subtopic"><div class="topic-title">2164.06(c) Software Cases</div></div>
+    <div class="subtopic"><div class="topic-title">2164.07 Relationship to Utility</div></div>
+    <div class="subtopic"><div class="topic-title">2164.08 Scope Commensurate with Claims</div></div>
+    <div class="subtopic"><div class="topic-title">2164.08(a) Single Means Claim</div></div>
+    <div class="subtopic"><div class="topic-title">2164.08(b) Inoperative Subject Matter</div></div>
+    <div class="subtopic"><div class="topic-title">2164.08(c) Critical Feature Not Claimed</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2165 Best Mode Requirement</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2165.01 Best Mode Considerations</div></div>
+    <div class="subtopic"><div class="topic-title">2165.02 Compared to Enablement</div></div>
+    <div class="subtopic"><div class="topic-title">2165.03 Rejection Requirements</div></div>
+    <div class="subtopic"><div class="topic-title">2165.04 Evidence of Concealment</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2166 Rejections Under 35 U.S.C. 112(a)</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2167–2170 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2171 Claims — 35 U.S.C. 112(b)</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2172 Subject Matter Regarded as the Invention</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2172.01 Unclaimed Essential Subject Matter</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2173 Definiteness Requirement</div>
+  <div class="children">
+    <div class="subtopic"><div class="topic-title">2173.01 Interpreting Claims</div></div>
+    <div class="subtopic"><div class="topic-title">2173.02 Definite Claim Language</div></div>
+    <div class="subtopic"><div class="topic-title">2173.03 Specification Correspondence</div></div>
+    <div class="subtopic"><div class="topic-title">2173.04 Breadth</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05 Specific Indefiniteness Issues</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(a) New Terminology</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(b) Relative Terminology</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(c) Numerical Ranges</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(d) Exemplary Language</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(e) Antecedent Basis</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(f) Reference to Other Claims</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(g) Functional Limitations</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(h) Alternative Limitations</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(i) Negative Limitations</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(j) Old Combination</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(k) Aggregation</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(l) [Reserved]</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(m) Prolix</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(n) Multiplicity</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(o) Double Inclusion</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(p) Product-by-Process</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(q) Use Claims</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(r) Omnibus Claim</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(s) Reference to Figures</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(t) Chemical Formula</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(u) Trademarks</div></div>
+    <div class="subtopic"><div class="topic-title">2173.05(v) Mere Function</div></div>
+    <div class="subtopic"><div class="topic-title">2173.06 Compact Prosecution</div></div>
+  </div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2174 Relationship Between 112(a) and 112(b)</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2175 Form Paragraphs — 112(b)</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2176–2180 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title toggle">2181 Means-Plus-Function — 35 U.S.C. 112(f)</div>
+  <div class="children"></div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2182 Search and Identification of Prior Art</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2183 Prima Facie Case of Equivalence</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2184 Proving Nonequivalence</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2185 Related 112 Issues</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2186 Doctrine of Equivalents</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2187 Form Paragraphs — 112(f)</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2188–2189 [Reserved]</div>
+</div>
+
+<div class="topic">
+  <div class="topic-title">2190 Prosecution Laches and Res Judicata</div>
+</div>
+
+  </div>
+</div>
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+// expand / collapse nodes
+document.addEventListener("click", e => {
+  if (!e.target.classList.contains("toggle")) return;
+  const children = e.target.nextElementSibling;
+  if (!children) return;
+  children.style.display =
+    children.style.display === "block" ? "none" : "block";
+});
+
+// chapter switching
+document.querySelectorAll(".chapter-link").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelectorAll(".chapter-section").forEach(sec => {
+      sec.style.display = "none";
+    });
+    const target = document.getElementById(link.dataset.target);
+    if (target) target.style.display = "block";
+  });
+});
+
+// show Chapter 600 by default
+document.getElementById("chapter-600").style.display = "block";
+</script>
+
+</body>
+</html>
